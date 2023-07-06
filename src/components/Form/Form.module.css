@@ -1,0 +1,17 @@
+.user_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_form_input {
+    margin-left: 10px;
+}
+
+.user_form_label {
+    margin-bottom: 15px;
+}
+
+.user_form_button {
+    margin-top: 20px;
+    max-width: 100px;
+}
