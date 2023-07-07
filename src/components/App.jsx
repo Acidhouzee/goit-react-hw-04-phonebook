@@ -10,12 +10,6 @@ export function UserForm() {
   const [contacts, setContacts] = useState(JSON.parse(localStorage.getItem('contacts')) ?? []);
 
   useEffect(() => {
-    const contacts = localStorage.getItem('contacts');
-    const newContacts = JSON.parse(contacts);
-    newContacts !== null && setContacts(newContacts);
-  }, []);
-    
-  useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
